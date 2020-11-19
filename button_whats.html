@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                <a href="https://web.whatsapp.com/send?phone=5516992632149" onclick="goog_report_conversion('https://api.whatsapp.com/send?phone=5516992632149&t')" class="float" target="_blank" style="color:#fff">
+                <img src="https://i.imgur.com/qceVJIX.png" alt="" width="42px">
+                </a>
+                <div id="msg1" style="visibility: hidden"> Hey, fale conosco! </div>
+
+                <style>
+                    .float{
+                    right:25px; 
+                    position:fixed; 
+                    width:60px; 
+                    height:50px;
+                    bottom:20px;
+                    text-align:center;
+                    z-index:100;
+                }
+                    #msg1 {
+                    position: fixed;
+                    background: #25D366;
+                    color: #fff;
+                    height:30px;
+                    right: 20px; 
+                    opacity: 1; 
+                    display: block; 
+                    z-index: 100;
+                    bottom: 93px;
+                    padding: 5px 15px 5px 15px;
+                    transform: translate3d(0,0,0);
+                    max-width: 250px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 30px 0 rgba(0,0,0,.1);
+                    -webkit-font-smoothing: antialiased;
+                    box-sizing: border-box;
+                    transition: all 0.3s ease-out;
+                    letter-spacing: normal;
+                    font-stretch: normal;
+                    font: normal normal 125% 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                    text-align-last: auto;
+                    text-decoration: none;
+                    -webkit-text-emphasis: none;
+                
+                }
+                #msg1:after{
+                    border-top-color: #25D366;
+                    position: absolute;
+                    right: 15px;
+                    top: 98%;
+                    content: '';
+                    width: 0px;
+                    height: 0px;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-top: 15px solid #25D366;
+                    clear: both;
+                    z-index:100;
+                }
+                </style>
+                
+                <script type="text/javascript">
+                // ativa o box de mensagem
+                function showIt2() {
+                    document.getElementById("msg1").style.visibility = "visible";
+                }
+                setTimeout("showIt2()", 5000); // Depois 5 segs
+                // desativa o box de mensagem
+                function hiddenIt() {
+                    document.getElementById("msg1").style.visibility = "hidden";
+                }
+                setTimeout("hiddenIt()", 10000); // Depois 15 segs
+                // ativa novamente o box de mensagem
+                function showIt3() {
+                    document.getElementById("msg1").style.visibility = "visible";
+                }
+                setTimeout("showIt3()", 20000); // Depois 35 segs
+                // Clique para esconder o box de mensagem
+                msg1.onclick = function() {
+                    document.getElementById('msg1').style.visibility = "hidden"; 
+                };
+            </script>
+        </body>
+    </head>
+</html>
